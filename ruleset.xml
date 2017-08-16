@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ruleset name="MessageCloud Coding Standard">
+    <description>MessageCloud PHP Coding Standard. Essentially PSR2 with some modifications.</description>
+
+    <arg name="colors"/>
+    <arg value="p"/>
+
+    <!-- PSR2 extends PSR1 -->
+    <rule ref="PSR2"/>
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+
+    <!--Extend the line length warning and error to 130 characters -->
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="130"/>
+            <property name="absoluteLineLimit" value="130"/>
+        </properties>
+    </rule>
+
+    <!--
+    We exclude the PSR2 Use Declaration rule as it clashes with PHP7 style grouped Use statements.
+    This is supposedly being fixed in a proposed PSR (https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md)
+    so we'll keep our eye on this.
+     -->
+    <rule ref="PSR2.Namespaces.UseDeclaration">
+        <exclude-pattern>*</exclude-pattern>
+    </rule>
+</ruleset>
