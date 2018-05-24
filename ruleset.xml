@@ -78,27 +78,12 @@
             <property name="allowFullyQualifiedNameForCollidingClasses" type="boolean" value="true"/>
             <property name="allowFullyQualifiedNameForCollidingConstants" type="boolean" value="true"/>
             <property name="allowFullyQualifiedNameForCollidingFunctions" type="boolean" value="true"/>
-            <property name="searchAnnotations" type="boolean" value="true"/>
+            <property name="searchAnnotations" type="boolean" value="false"/>
         </properties>
     </rule>
 
     <!-- Require presence of declare(strict_types=1) -->
-    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes">
-        <properties>
-            <property
-                    name="newlinesCountBetweenOpenTagAndDeclare"
-                    value="2"
-            />
-            <property
-                    name="spacesCountAroundEqualsSign"
-                    value="0"
-            />
-            <property
-                    name="newlinesCountAfterDeclare"
-                    value="1"
-            />
-        </properties>
-    </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.DeclareStrictTypes"/>
 
     <!-- Require one space between typehint and variable, require no space between nullability sign and typehint -->
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
