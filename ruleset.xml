@@ -70,8 +70,8 @@
     <!-- Forbid using absolute class name references (except global ones) -->
     <rule ref="SlevomatCodingStandard.Namespaces.ReferenceUsedNamesOnly">
         <properties>
-            <property name="allowFallbackGlobalConstants" type="boolean" value="false"/>
-            <property name="allowFallbackGlobalFunctions" type="boolean" value="false"/>
+            <property name="allowFallbackGlobalConstants" type="boolean" value="true"/>
+            <property name="allowFallbackGlobalFunctions" type="boolean" value="true"/>
             <property name="allowFullyQualifiedGlobalClasses" type="boolean" value="false"/>
             <property name="allowFullyQualifiedGlobalConstants" type="boolean" value="false"/>
             <property name="allowFullyQualifiedGlobalFunctions" type="boolean" value="false"/>
