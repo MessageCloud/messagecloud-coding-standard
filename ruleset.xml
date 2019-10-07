@@ -102,4 +102,68 @@
 
     <!-- Require one space between typehint and variable, require no space between nullability sign and typehint -->
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
+
+    <!-- Forbid PHP 4 constructors -->
+    <rule ref="Generic.NamingConventions.ConstructorName"/>
+
+    <!-- Forbid deprecated functions -->
+    <rule ref="Generic.PHP.DeprecatedFunctions"/>
+
+    <!-- Forbid comments starting with # -->
+    <rule ref="PEAR.Commenting.InlineComment"/>
+
+    <!-- Disallow else if in favor of elseif -->
+    <rule ref="PSR2.ControlStructures.ElseIfDeclaration.NotAllowed">
+        <type>error</type>
+    </rule>
+
+    <!-- Forbid dead code -->
+    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
+
+    <!-- Forbid assignments in conditions -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.AssignmentInCondition"/>
+
+    <!-- Require new instances with parentheses -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.NewWithParentheses"/>
+
+    <!-- Forbid usage of conditions when a simple return can be used -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
+
+    <!-- Forbid usage of boolean-only ternary operator usage (e.g. $foo ? true : false) -->
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator"/>
+
+    <!-- Require using Throwable instead of Exception -->
+    <rule ref="SlevomatCodingStandard.Exceptions.ReferenceThrowableOnly"/>
+
+    <!-- Require use statements to be alphabetically sorted -->
+    <rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses"/>
+
+    <!-- Forbid weak comparisons -->
+    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
+
+    <!-- Require no spacing after spread operator -->
+    <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing"/>
+
+    <!-- Forbid useless parentheses -->
+    <rule ref="SlevomatCodingStandard.PHP.UselessParentheses"/>
+
+    <!-- Require ? when default value is null -->
+    <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
+
+    <!-- Forbid class being in a file with different name -->
+    <rule ref="Squiz.Classes.ClassFileName"/>
+
+    <!-- Force whitespace before and after concatenation -->
+    <rule ref="Squiz.Strings.ConcatenationSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+            <property name="ignoreNewlines" value="true"/>
+        </properties>
+    </rule>
+
+    <!-- Require space after language constructs -->
+    <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
+
+    <!-- Require space around logical operators -->
+    <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
 </ruleset>
