@@ -166,4 +166,7 @@
 
     <!-- Require space around logical operators -->
     <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
+
+    <!-- Forbid useless alias for classes, constants and functions -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
 </ruleset>
