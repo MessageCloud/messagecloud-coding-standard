@@ -8,7 +8,7 @@ The PHP coding standard for MessageCloud.
 ```json
 {
   "require-dev": {
-    "messagecloud/messagecloud-coding-standard": "^1.0"
+    "messagecloud/messagecloud-coding-standard": "^3.0"
   }
 }
 ```
