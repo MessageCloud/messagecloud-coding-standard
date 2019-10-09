@@ -13,7 +13,7 @@ The PHP coding standard for MessageCloud.
 }
 ```
 
-2. Create a PHP Code Sniffer configuration file `phpcs.xml`:
+2. Create a PHP Code Sniffer configuration file `phpcs.xml` in the root of your project:
 ```xml
 <?xml version="1.0"?>
 <ruleset name="MessageCloud Coding Standard">
